@@ -1,0 +1,37 @@
+﻿@page
+@model WEPAPPRAzor.Pages.Cursos.IndexModel
+@{
+    ViewData["Title"] = "Lista de Cursos";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="text-info">Lista de Cursos</h2>
+            </div>
+            <div class="col-sm-6">
+                <a asp-asp-page="Crear" class="btn-primary btn-primary">Crear nuevo curso</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+
+    </div>
+</div>
+
+<div class="card-body">
+    @if (Model.Cursos.Count() > 0)
+    {
+        /*<br /><br />
+        <table class="table table-striped border">
+            <tr class="table-secondary">
+                @Html.DisplayNameFor()
+            </tr>
+        </table>*/
+       
+    } else
+    {
+        <p>No hay cursos disponibles</p>
+    }
+</div>
